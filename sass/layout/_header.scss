@@ -1,0 +1,128 @@
+.header {
+  border-bottom: 1px solid var(--border-color);
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
+}
+
+.container.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav {
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+  }
+}
+
+.site-nav {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.site-nav__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-nav__link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  @include font(500, 14px, 1.14);
+
+  color: var(--title-color);
+
+  text-decoration: none;
+
+  @include transition(color);
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.site-nav__link--current {
+  position: relative;
+  color: var(--accent-color);
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(33, 150, 243, 1);
+  }
+}
+
+.contact {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    padding: 14px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    align-items: center;
+  }
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  @include font(500, 12px, 1.166, 0.02em);
+  text-decoration: none;
+  color: inherit;
+
+  @include transition(color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(500, 14px, 1.17, 0.02em);
+  }
+}
+
+.contact__link:focus .contact__icon,
+.contact__link:hover .contact__icon {
+  fill: currentColor;
+}
+
+.contact__icon {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
