@@ -1,0 +1,12 @@
+@mixin font($fw: 400, $fz: 14px, $ln: 1.71, $ls: 0.03em) {
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $ln;
+  letter-spacing: $ls;
+}
+
+@mixin transition($tp: fill, $td: 250ms, $ttf: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition-property: $tp;
+  transition-duration: $td;
+  transition-timing-function: $ttf;
+}
