@@ -58,8 +58,8 @@ visually-hidden {
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: var(--primary-bcg-color);
 }
 
@@ -108,6 +108,7 @@ visually-hidden {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: rgba(54, 54, 54, 0.5);
 }
 
 @media screen and (min-width: 480px) {
