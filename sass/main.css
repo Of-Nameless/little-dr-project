@@ -45,6 +45,10 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -56,6 +60,7 @@ visually-hidden {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--primary-bcg-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -71,8 +76,7 @@ visually-hidden {
   font-size: 28px;
   line-height: 1.1785;
   letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--title-color);
+  color: var(--primary-white-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -533,5 +537,90 @@ visually-hidden {
 .info-nav__registration {
   color: var(--primary-white-color);
   text-decoration: none;
+}
+
+.hitset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+.hitset__item {
+  -ms-flex-preferred-size: calc((100% - 80px) / 4);
+      flex-basis: calc((100% - 80px) / 4);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.hitset-style {
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hitset-style:hover, .hitset-style:focus {
+  -webkit-box-shadow: var(--card-shadow);
+          box-shadow: var(--card-shadow);
+}
+
+.hitset-style__content {
+  margin: 0;
+  padding: 10px 5px;
+  background-color: rgba(54, 54, 54, 0.5);
+  border: 1px solid rgba(54, 54, 54, 0.5);
+  border-radius: 4px;
+}
+
+.hitset-style__mark {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: grey;
+}
+
+.hitset-style__movie {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--primary-white-color);
+}
+
+.hitset-style__tickets {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.02em;
 }
 /*# sourceMappingURL=main.css.map */

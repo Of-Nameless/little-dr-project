@@ -1,6 +1,7 @@
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--primary-bcg-color);
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -11,9 +12,8 @@
 .section__title {
   margin-bottom: 30px;
   @include font(700, 28px, 1.1785);
-  text-align: center;
 
-  color: var(--title-color);
+  color: var(--primary-white-color);
 
   @media screen and (min-width: 1200px) {
     @include font(700, 36px, 1.66);
