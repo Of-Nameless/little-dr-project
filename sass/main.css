@@ -71,9 +71,9 @@ visually-hidden {
 }
 
 .section__title {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 1.1785;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
@@ -550,15 +550,15 @@ visually-hidden {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: -20px;
-  margin-top: -20px;
+  margin-left: -10px;
+  margin-top: -10px;
 }
 
 .hitset__item {
-  -ms-flex-preferred-size: calc((100% - 80px) / 4);
-      flex-basis: calc((100% - 80px) / 4);
-  margin-top: 20px;
-  margin-left: 20px;
+  -ms-flex-preferred-size: calc((100% - 40px) / 4);
+      flex-basis: calc((100% - 40px) / 4);
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .hitset-style {
@@ -585,9 +585,29 @@ visually-hidden {
   border-radius: 4px;
 }
 
+.hitset-style__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.hitset-style__icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  fill: var(--accent-color);
+  margin-right: 3px;
+}
+
 .hitset-style__mark {
   font-weight: 400;
-  font-size: 8px;
+  font-size: 10px;
   line-height: 1;
   letter-spacing: 0.02em;
   color: grey;
@@ -599,6 +619,10 @@ visually-hidden {
   line-height: 1;
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
+}
+
+.hitset-style__movie:hover, .hitset-style__movie:focus {
+  text-decoration: underline;
 }
 
 .hitset-style__tickets {
