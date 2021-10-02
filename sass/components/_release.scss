@@ -1,0 +1,14 @@
+.release-cinema__item {
+  display: flex;
+}
+
+.release-movie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.release-movie__image {
+  width: 50px;
+  height: 80px;
+}
