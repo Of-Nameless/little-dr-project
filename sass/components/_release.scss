@@ -1,12 +1,22 @@
+.release-cinema {
+  display: flex;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
 .release-cinema__title {
+  color: var(--primary-white-color);
+  padding-top: 10px;
+  padding-left: 40px;
   margin-bottom: 10px;
 }
 
 .release-cinema__item {
   display: flex;
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
+  flex-basis: calc((100% - 20px) / 2);
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-bottom: 20px;
 }
 
 .release-movie {
@@ -39,9 +49,14 @@
 
 .release-movie__link {
   color: var(--primary-white-color);
+  @include font(400, 10px, 1.17);
   &:hover,
   &:focus {
     color: var(--accent-color);
     text-decoration: underline;
   }
+}
+
+.release-movie__text {
+  @include font(400, 10px, 1.17);
 }
