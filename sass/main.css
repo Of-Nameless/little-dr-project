@@ -712,10 +712,18 @@ visually-hidden {
   margin-bottom: 20px;
 }
 
+.release-cinema__title {
+  margin-bottom: 10px;
+}
+
 .release-cinema__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.release-cinema__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .release-movie {
@@ -730,8 +738,38 @@ visually-hidden {
           align-items: center;
 }
 
+.release-movie__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.release-movie__date {
+  color: var(--accent-color);
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.release-movie__month {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
 .release-movie__image {
   width: 50px;
   height: 80px;
+}
+
+.release-movie__link {
+  color: var(--primary-white-color);
+}
+
+.release-movie__link:hover, .release-movie__link:focus {
+  color: var(--accent-color);
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */
