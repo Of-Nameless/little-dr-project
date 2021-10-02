@@ -13,6 +13,10 @@
   &:hover {
     color: var(--accent-color);
   }
+  @media screen and (min-width: 768px) {
+    @include font(700, 22px, 1.7);
+    margin-left: 10px;
+  }
 }
 
 .news-list__item {
@@ -28,15 +32,23 @@
 
 .news-list__image {
   width: 33%;
+  margin-left: 10px;
   margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    width: 25%;
+  }
 }
 
 .news-list__link {
-  @include font(400, 16px, 1.17, 0.02em);
+  @include font(500, 16px, 1.17, 0.02em);
   color: var(--primary-white-color);
   &:focus,
   &:hover {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include font(700, 20px, 1.66);
   }
 }
 
@@ -49,4 +61,8 @@
   background-color: var(--accent-color);
   color: #000000;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    @include font(700, 22px, 1.7);
+  }
 }

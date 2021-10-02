@@ -15,7 +15,7 @@
   background-color: var(--primary-bcg-color);
   @include transition(opacity);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -65,10 +65,8 @@
   &:focus {
     color: var(--accent-color);
   }
-}
 
-@media screen and (min-width: 768px) {
-  .mobile-toggle {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -84,6 +82,10 @@
   &:not(:last-child) {
     margin-bottom: 32px;
   }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 30px;
+  }
 }
 
 .mobile-list__link {
@@ -95,6 +97,10 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: 768px) {
+    @include font(500, 28px, 1.66);
+  }
 }
 
 .mobile-list__link--current {
@@ -104,6 +110,11 @@
 .mobile-list__icon {
   margin-right: 10px;
   fill: var(--primary-white-color);
+}
+
+.mobile-list__link:hover .mobile-list__icon,
+.mobile-list__link:focus .mobile-list__icon {
+  fill: var(--accent-color);
 }
 
 .info-nav {

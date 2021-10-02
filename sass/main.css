@@ -135,7 +135,7 @@ visually-hidden {
   background-color: var(--primary-bcg-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header {
     height: 80px;
   }
@@ -162,7 +162,7 @@ visually-hidden {
           align-items: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header__nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -174,7 +174,7 @@ visually-hidden {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -227,103 +227,6 @@ visually-hidden {
   width: 100%;
   height: 4px;
   background-color: #2196f3;
-}
-
-.contact {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-left: auto;
-    padding: 14px 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-left: auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-.contact__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 10px;
-}
-
-@media screen and (min-width: 1200px) {
-  .contact__item {
-    margin-bottom: 0;
-  }
-  .contact__item:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
-.contact__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.166;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: inherit;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact__link:hover, .contact__link:focus {
-  color: var(--accent-color);
-}
-
-@media screen and (min-width: 1200px) {
-  .contact__link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-  }
-}
-
-.contact__link:focus .contact__icon,
-.contact__link:hover .contact__icon {
-  fill: currentColor;
-}
-
-.contact__icon {
-  margin-right: 10px;
-  fill: var(--primary-text-color);
 }
 
 .logo {
@@ -398,7 +301,7 @@ visually-hidden {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .mobile-menu {
     display: none;
   }
@@ -462,7 +365,7 @@ visually-hidden {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .mobile-toggle {
     display: none;
   }
@@ -491,6 +394,12 @@ visually-hidden {
   margin-bottom: 32px;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-list__item {
+    padding-left: 30px;
+  }
+}
+
 .mobile-list__link {
   font-weight: 500;
   font-size: 22px;
@@ -504,6 +413,15 @@ visually-hidden {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-list__link {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.66;
+    letter-spacing: 0.03em;
+  }
+}
+
 .mobile-list__link--current {
   color: var(--accent-color);
 }
@@ -511,6 +429,11 @@ visually-hidden {
 .mobile-list__icon {
   margin-right: 10px;
   fill: var(--primary-white-color);
+}
+
+.mobile-list__link:hover .mobile-list__icon,
+.mobile-list__link:focus .mobile-list__icon {
+  fill: var(--accent-color);
 }
 
 .info-nav {
@@ -606,12 +529,28 @@ visually-hidden {
   margin-right: 3px;
 }
 
+@media screen and (min-width: 768px) {
+  .hitset-style__icon {
+    width: 11px;
+    height: 11px;
+  }
+}
+
 .hitset-style__mark {
   font-weight: 400;
   font-size: 10px;
   line-height: 1;
   letter-spacing: 0.02em;
   color: grey;
+}
+
+@media screen and (min-width: 768px) {
+  .hitset-style__mark {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }
 
 .hitset-style__movie {
@@ -624,6 +563,15 @@ visually-hidden {
 
 .hitset-style__movie:hover, .hitset-style__movie:focus {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .hitset-style__movie {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }
 
 .hitset-style__tickets {
@@ -650,6 +598,15 @@ visually-hidden {
   letter-spacing: 0.02em;
 }
 
+@media screen and (min-width: 768px) {
+  .hitset-style__tickets {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+}
+
 .news-top {
   margin-bottom: 20px;
 }
@@ -670,6 +627,16 @@ visually-hidden {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .news-top__link {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-left: 10px;
+  }
+}
+
 .news-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -686,11 +653,18 @@ visually-hidden {
 
 .news-list__image {
   width: 33%;
+  margin-left: 10px;
   margin-right: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .news-list__image {
+    width: 25%;
+  }
+}
+
 .news-list__link {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -699,6 +673,15 @@ visually-hidden {
 
 .news-list__link:focus, .news-list__link:hover {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .news-list__link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.66;
+    letter-spacing: 0.03em;
+  }
 }
 
 .news__button {
@@ -710,6 +693,15 @@ visually-hidden {
   background-color: var(--accent-color);
   color: #000000;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .news__button {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
 }
 
 .release-cinema {
