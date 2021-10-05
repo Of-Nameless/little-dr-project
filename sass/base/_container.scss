@@ -17,3 +17,27 @@
     width: 1200px;
   }
 }
+
+.container--news {
+  @media screen and (min-width: 1200px) {
+    width: 1000px;
+  }
+}
+
+.container--top {
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.container--serials {
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

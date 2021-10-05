@@ -33,3 +33,26 @@
 .section--team {
   background-color: var(--secondary-bcg-color);
 }
+
+.section--top {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-bottom: 0;
+    background-color: rgba(54, 54, 54, 0.5);
+  }
+}
+
+.section--serials {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgba(54, 54, 54, 0.5);
+  }
+}

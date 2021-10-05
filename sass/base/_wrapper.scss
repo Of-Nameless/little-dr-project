@@ -1,0 +1,13 @@
+.main-content {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-bcg-color);
+  }
+}
+
+.wrapper-news {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--primary-bcg-color);
+}
