@@ -15,6 +15,8 @@
   @include font(700, 20px, 1.1785);
 
   color: var(--primary-white-color);
+  background-color: grey;
+  text-decoration: underline;
 
   @media screen and (min-width: 1200px) {
     @include font(700, 36px, 1.66);

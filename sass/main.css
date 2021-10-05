@@ -78,6 +78,8 @@ visually-hidden {
   line-height: 1.1785;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
+  background-color: grey;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 1200px) {
@@ -773,6 +775,11 @@ visually-hidden {
     line-height: 1.7;
     letter-spacing: 0.03em;
   }
+}
+
+.top {
+  color: gold;
+  padding-right: 5px;
 }
 
 .release-cinema {
