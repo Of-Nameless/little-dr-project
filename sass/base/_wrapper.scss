@@ -11,3 +11,16 @@
   padding-bottom: 94px;
   background-color: var(--primary-bcg-color);
 }
+
+.wrapper__title {
+  color: var(--primary-white-color);
+  background-color: var(--primary-text-color);
+  @include font(500, 18px, 1.17);
+  padding: 10px 15px;
+}
+
+.wrapper__title--link {
+  color: var(--primary-white-color);
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -115,8 +115,7 @@ visually-hidden {
 @media screen and (min-width: 1200px) {
   .section--top {
     display: block;
-    padding-bottom: 0;
-    background-color: rgba(54, 54, 54, 0.5);
+    margin-bottom: 50px;
   }
 }
 
@@ -129,9 +128,6 @@ visually-hidden {
 @media screen and (min-width: 1200px) {
   .section--serials {
     display: block;
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: rgba(54, 54, 54, 0.5);
   }
 }
 
@@ -164,6 +160,7 @@ visually-hidden {
 @media screen and (min-width: 1200px) {
   .container--news {
     width: 1000px;
+    background-color: var(--primary-bcg-color);
   }
 }
 
@@ -172,7 +169,6 @@ visually-hidden {
     width: 200px;
     margin: 0 auto;
     padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -181,7 +177,6 @@ visually-hidden {
     width: 200px;
     margin: 0 auto;
     padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -537,6 +532,22 @@ visually-hidden {
   background-color: var(--primary-bcg-color);
 }
 
+.wrapper__title {
+  color: var(--primary-white-color);
+  background-color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  padding: 10px 15px;
+}
+
+.wrapper__title--link {
+  color: var(--primary-white-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .hitset {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -778,8 +789,43 @@ visually-hidden {
 }
 
 .top {
-  color: gold;
-  padding-right: 5px;
+  color: var(--logo-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: -15px;
+}
+
+.top__item {
+  border: 1px solid var(--primary-text-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.top__link {
+  color: var(--primary-white-color);
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.top__link:hover, .top__link:focus {
+  text-decoration: underline;
+}
+
+.top__text {
+  color: var(--primary-text-color);
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 
 .release-cinema {
@@ -863,6 +909,46 @@ visually-hidden {
   font-weight: 400;
   font-size: 10px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.serials {
+  color: var(--logo-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: -15px;
+}
+
+.serials__item {
+  border: 1px solid var(--primary-text-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.serials__link {
+  color: var(--primary-white-color);
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.serials__link:hover, .serials__link:focus {
+  text-decoration: underline;
+}
+
+.serials__text {
+  margin-left: 10px;
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 }
 /*# sourceMappingURL=main.css.map */

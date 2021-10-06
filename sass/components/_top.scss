@@ -1,0 +1,31 @@
+.top {
+  color: var(--logo-color);
+  display: flex;
+  flex-direction: column;
+  margin-left: -15px;
+}
+
+.top__item {
+  border: 1px solid var(--primary-text-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  // &:not(:last-child) {
+  //   margin-bottom: 20px;
+  // }
+}
+
+.top__link {
+  color: var(--primary-white-color);
+  margin-left: 10px;
+  @include font(400, 14px, 1.17);
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.top__text {
+  color: var(--primary-text-color);
+  margin-left: 10px;
+  @include font(400, 12px, 1.16);
+}

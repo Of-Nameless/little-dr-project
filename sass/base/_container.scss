@@ -21,6 +21,7 @@
 .container--news {
   @media screen and (min-width: 1200px) {
     width: 1000px;
+    background-color: var(--primary-bcg-color);
   }
 }
 
@@ -29,7 +30,6 @@
     width: 200px;
     margin: 0 auto;
     padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -38,6 +38,5 @@
     width: 200px;
     margin: 0 auto;
     padding-left: 15px;
-    padding-right: 15px;
   }
 }
