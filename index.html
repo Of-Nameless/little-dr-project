@@ -10,6 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./sass/chief-slider-with-prefixes.min.css">
+    <script defer src="./js/chief-slider.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = new ChiefSlider('.slider', {
+                loop: false
+            });
+        });
+    </script>
     <link rel="stylesheet" href="./sass/main.css">    
 </head>
 <body>
@@ -407,6 +416,39 @@
             </div>
         </ul>
     </div>
+</section>
+
+<!-- reviews -->
+<section class="section">
+<div class="container">
+<div class="slider">
+    <div class="slider__container">
+        <div class="slider__wrapper">
+            <div class="slider__items">
+                <div class="slider__item">
+                    <img class="slider__image" src="./images/testimonials1 1.png" alt="alena" width="85" height="85">
+                    <p class="slider__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                    congue. Lorem ipsum primis in nibh vel risus.</p>
+                    <!-- Контент 1 слайда -->
+                </div>
+                <div class="slider__item">
+                    <img class="slider__image" src="./images/testimonials1 2.png" alt="">
+                    <p class="slider__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan</p>
+                    <!-- Контент 2 слайда -->
+                </div>
+                <div class="slider__item">
+                    <img class="slider__image" src="./images/testimonials1 1 (1).png" alt="">
+                    <p class="slider__text">fnvjvnfjvnjf</p>
+                    <!-- Контент 3 слайда -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+    <a href="#" class="slider__control" data-slide="prev"></a>
+    <a href="#" class="slider__control" data-slide="next"></a>
+</div>
+</div>
 </section>
 
 </main>
