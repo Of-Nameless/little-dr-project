@@ -10,16 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./sass/chief-slider-with-prefixes.min.css">
-    <script defer src="./js/chief-slider.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const slider = new ChiefSlider('.slider', {
-                loop: false
-            });
-        });
-    </script>
-    <link rel="stylesheet" href="./sass/main.css">    
+    <link rel="stylesheet" href="./sass/main.css">  
 </head>
 <body>
     <header class="header">
@@ -419,43 +410,33 @@
 </section>
 
 <!-- reviews -->
-<section class="section">
-<div class="container">
-<div class="slider">
-    <div class="slider__container">
-        <div class="slider__wrapper">
-            <div class="slider__items">
-                <div class="slider__item">
-                    <img class="slider__image" src="./images/testimonials1 1.png" alt="alena" width="85" height="85">
-                    <p class="slider__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
-                    congue. Lorem ipsum primis in nibh vel risus.</p>
-                    <!-- Контент 1 слайда -->
-                </div>
-                <div class="slider__item">
-                    <img class="slider__image" src="./images/testimonials1 2.png" alt="">
-                    <p class="slider__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan</p>
-                    <!-- Контент 2 слайда -->
-                </div>
-                <div class="slider__item">
-                    <img class="slider__image" src="./images/testimonials1 1 (1).png" alt="">
-                    <p class="slider__text">fnvjvnfjvnjf</p>
-                    <!-- Контент 3 слайда -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Кнопки для перехода к предыдущему и следующему слайду -->
-    <a href="#" class="slider__control" data-slide="prev"></a>
-    <a href="#" class="slider__control" data-slide="next"></a>
+<ul class="slider">
+    <li class="slider__item">
+        <img class="slider__image" src="./images/testimonials1 1.jpg" alt="">
+        <p class="slider__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+            nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+        <p class="slider__address">Emily, Los Angeles</p>
+    </li>
+    <li class="slider__item">
+        <img class="slider__image" src="./images/testimonials1 1.jpg" alt="">
+        <p class="slider__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+        nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+        <p class="slider__address">Mary, Chicago</p>
+    </li>
+    <li class="slider__item">
+        <img class="slider__image" src="./images/testimonials1 1.jpg" alt="">
+        <p class="slide__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+            nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+        <p class="slider__address">Claire, New York</p>
+    </li>
+</ul>
+<div class="pagination">
 </div>
-</div>
-</section>
 
 </main>
-
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/slider.js"></script>
 <script defer src="js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
