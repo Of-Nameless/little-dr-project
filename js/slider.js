@@ -1,13 +1,14 @@
 $(document).ready(function () {
     $('.slider').slick({
-        arrows: false,
-        dots: true,
+        mobileFirst: true,
+        arrows: true,
+        dots: false,
         adaptiveHeight: true,
-        slidesToShow: 1,
+        slidesToShow: 3,
         speed: 1000,
         easing: 'linear',
-        infinite: false,
-        autoplay: true,
+        infinite: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         pauseOnFocus:true,
         pauseOnHover:true,
@@ -16,17 +17,16 @@ $(document).ready(function () {
         swipe: true,
         waitForAnimate: false,
         centerMode: false,
-        vertical: true,
         responsive:[
-            {
+            {   
             breakpoint: 768,
-            settings: {
-                vertical: false,
-                arrows: true,
+                settings: {
+                    slidesToShow: 2, 
+                    centerMode: true,
                     }    
             }
         ],
-        mobileFirst: true,
+        
         appendDots:$('.pagination'),
     });
 }); 

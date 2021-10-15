@@ -1,7 +1,7 @@
 .hitset {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 
   margin-left: -10px;
   margin-top: -10px;
@@ -39,6 +39,11 @@
   align-items: baseline;
 }
 
+// .hitset-style__image {
+//   width: 100px;
+//   height: 150px;
+// }
+
 .hitset-style__icon {
   display: inline-flex;
   align-items: center;
@@ -61,7 +66,7 @@
 }
 
 .hitset-style__movie {
-  @include font(400, 10px, 1, 0.02em);
+  @include font(400, 8px, 1.17, 0.02em);
   color: var(--primary-white-color);
   &:hover,
   &:focus {
@@ -84,7 +89,7 @@
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
-  @include font(400, 10px, 1, 0.02em);
+  @include font(400, 8px, 1, 0.02em);
 
   @media screen and (min-width: 768px) {
     @include font(700, 16px, 1.17);

@@ -7,14 +7,14 @@
 }
 
 .news-top__link {
-  @include font(500, 20px, 1.7, 0.02em);
+  @include font(500, 18px, 1.7, 0.02em);
   color: var(--primary-white-color);
   &:focus,
   &:hover {
     color: var(--accent-color);
   }
   @media screen and (min-width: 768px) {
-    @include font(700, 22px, 1.7);
+    @include font(700, 20px, 1.7);
     margin-left: 10px;
   }
 }
@@ -40,7 +40,7 @@
 }
 
 .news-list__link {
-  @include font(500, 16px, 1.17, 0.02em);
+  @include font(500, 12px, 1.17, 0.02em);
   color: var(--primary-white-color);
   &:focus,
   &:hover {
@@ -48,7 +48,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    @include font(700, 20px, 1.66);
+    @include font(700, 16px, 1.66);
   }
 }
 
