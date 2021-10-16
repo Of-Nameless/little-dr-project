@@ -5,6 +5,10 @@
 
   margin-left: -10px;
   margin-top: -10px;
+  @media screen and (min-width: 1200px) {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 
   // display: grid;
   // grid-template-rows: 1fr 1fr;
@@ -16,6 +20,11 @@
   flex-basis: calc((100% - 40px) / 4);
   margin-top: 10px;
   margin-left: 10px;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100%-120px) / 4);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
 }
 
 .hitset-style {
@@ -39,10 +48,8 @@
   align-items: baseline;
 }
 
-// .hitset-style__image {
-//   width: 100px;
-//   height: 150px;
-// }
+.hitset-style__image {
+}
 
 .hitset-style__icon {
   display: inline-flex;

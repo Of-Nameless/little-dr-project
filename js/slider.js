@@ -13,10 +13,9 @@ $(document).ready(function () {
         pauseOnFocus:true,
         pauseOnHover:true,
         pauseOnDotsHover:true,
-        druggable: true,
-        swipe: true,
         waitForAnimate: false,
         centerMode: false,
+        variableWidth: false,
         responsive:[
             {   
             breakpoint: 768,
